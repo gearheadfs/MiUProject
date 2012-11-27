@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Dave Johnson
+	 MiU 1211
+	 Assignment 1
+	 11/26/12-->
+
+<html> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Visual Frameworks: Assignment 4" />
+		<meta name="keywords" content="VFW, Assignment 3, Dave Johnson, 09/19/12" />
+		<meta name="robots" content="index, follow" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/main.js" type="text/javascript"></script>
+		<title>Dave Johnson MiU: Assignment 1 11/26/12</title>
+	</head>
+	<body>
+		<form method="get" id="runSearch">
+			<h5 id="searchText">Search for a contact.</h5>
+			<div>
+				<input type="text" id="search" name="srch" value="" size="20" />
+				<input type="submit" id="sbmtbtn" value="Search" />
+			</div>
+		</form>
+		
+		<h1>Address Book</h1>
+		<p id="description">An app that saves contacts. </p>
+		<div id="cta">
+			<p class="intro">
+				<a href="additem.html" height="470" width="960"><img src="img/cta.png" /></a>
+			</p>
+		</div>
+		<h2>Get Started Now</h2><br />
+		<a href="additem.html" id="addcontact"> Add Contact </a>
+		<div id="browseContent"></div>
+		<div class="Navigation"></div>
+		<h3 id="dropdown1">Browse Contacts by Age</h3>
+			<ul id="dropdown1">
+				<li><div>Age Groups</div>
+					<ul>
+						<li><a href="#">18-24</a></li>
+						<li><a href="#">25-40</a></li>
+						<li><a href="#">40+</a></li>
+					</ul>
+				</li>
+			</ul>
+		<div id="browseContent2"></div>
+		<div class="Navigation"></div>
+		<h3 id="dropdown2">Browse Contacts by Sex</h3>
+			<ul id="dropdown2">
+				<li><div>Male or Female</div>
+					<ul>
+						<li><a href="#">Female</a></li>
+						<li><a href="#">Male</a></li>
+					</ul>
+				</li>
+			</ul>
+	</body>
+</html>
