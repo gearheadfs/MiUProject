@@ -1,6 +1,6 @@
 // Dave Johnson
-// 09/28/12
-// MiU 1209
+// 11/28/12
+// MiU 1211
 // Assignment 1
 
 //Wait until DOM is ready
