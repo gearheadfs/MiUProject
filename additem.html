@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	
-	<title>Mobile Site Template</title>
+	<title>LottoBall</title>
 	
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="HandheldFriendly" content="True">
@@ -22,49 +22,40 @@
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
+
+
+
+
+
 <body>
 	
 	<!--Order Page-->
             <div data-role="page" id="order" data-add-back-btn="true">
             <div data-role="header" data-position="fixed">
-                <h1>Select Crust</h1>
+                <h1 id="playMethod">Pick your play method.</h1>
             </div>
             
             <div data-role="content">
                 <ul data-role="listview" data-inset="true">
                     <li>
-                        <a href="#toppings" data-transition="slide">
-                            <img src="images/thincrust.jpg" />
-                            <h3>Thin Crust</h3>
-                            <p>Thin, light and cripsy crust.</p>
+                        <a href="#lottoNum" data-transition="slide">
+                            <img src="img/dollarsign.png" />
+                            <h3>Classical</h3>
+                            <p>Pick and match 5 numbers and win $$$</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#toppings" data-transition="slide">
-                            <img src="images/stuffedcrust.jpg" />
-                            <h3>Stuffed Crust</h3>
-                            <p>Loads of mozzarella!</p>
+                        <a href="#lottoNum" data-transition="slide">
+                            <img src="img/dollarsignx2.png" />
+                            <h3>Double Up</h3>
+                            <p>Pick and Match 5 numbers and win double $$$</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#toppings" data-transition="slide">
-                            <img src="images/hotdogcrust.jpg" />
-                            <h3>Hot Dog Crust</h3>
-                            <p>A ninja turtle fave!</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#toppings"data-transition="slide">
-                            <img src="images/deepdish.jpg" />
-                            <h3>Deep Dish</h3>
-                            <p>You'll need 2 stomachs!</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#toppings" data-transition="slide">
-                            <img src="images/nocrust.jpg" />
-                            <h3>No Crust</h3>
-                            <p>For those who love pizza!</p>
+                        <a href="#lottoNum" data-transition="slide">
+                            <img src="img/dollarsignx3.png" />
+                            <h3>Three's a Charm</h3>
+                            <p>Pick and Match 5 Numbers and win triple $$$</p>
                         </a>
                     </li>
                 </ul>
@@ -74,20 +65,28 @@
             <div data-role="footer" data-position="fixed" data-theme="a" data-id="order">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#Menu" data-icon="star" class="ul-btn-active">Menu</a></li>
-                        <li><a href="#Order History" data-icon="grid">Order History</a></li>
-                        <li><a href="#Settings" data-icon="gear">Account Settings</a></li>
+                        <li><a href="#howTo" data-icon="info" class="ul-btn-active">How To Play</a></li>
+                        <li><a href="#pricing" data-icon="star">Pricing</a></li>
+                        <li><a href="#account" data-icon="gear">Account</a></li>
                     </ul>
                     
                 </div>
             </div>
         </div>
         
+
+
+
+
+
+
+
+
 	
 	<!--Info Page-->
 	    <div data-role="page" id="info" data-add-back-btn="true">
             <div data-role="header" data-position="fixed">
-                <h1>Your Info</h1>
+                <h1 id="yourInfoTitle">Your Info</h1>
             </div>
             
             <div data-role="content">
@@ -100,48 +99,61 @@
 		    <label for="phnumber">Telephone Number:*</label><input type="number" pattern="[0-9]*" name="phnumber" id="phnumber" value="" data-mini="true" />
 	    <!--</div>-->
 		
-		    <div data-role="fieldcontain"><label for="state" data-mini="true" class="select" id="select">State:</label></div>
+	    <div data-role="fieldcontain"><label for="state" data-mini="true" class="select" id="select">State:</label></div>
 	    
-		    <div data-role="fieldcontain"><label for="slider-1">Quantity<input type="range" name="qty" id="qty" value="1" min="1" max="20" /></div>
+	    <div data-role="fieldcontain"><label for="slider-1">Quantity<input type="range" name="qty" id="qty" value="1" min="1" max="20" /></div>
 		    
-		    <div data-role="fieldcontain" data-inline="true"><a href="#home" data-role="button" data-inline="true" data-icon="delete">Cancel</a></div>
+	    <div>
+		<fieldset class="ui-grid">
 		    <div data-role="button" data-type="submit" data-inline="true" data-icon="check" data-theme="b" id="submit">Submit</div>
+		    <a href="#order" data-mini="true" data-role="button" data-inline="true" data-icon="delete" data-transition="slide">Cancel</a></div>
 		    
+		</fieldset>
+	    </div>
 		    
-	    
-	    
-            </div>
+		    <!--<div data-role="fieldcontain" data-inline="true"><a href="#order" data-role="button" data-inline="true" data-icon="delete">Cancel</a></div>
+		    <div data-role="button" data-type="submit" data-inline="true" data-icon="check" data-theme="b" id="submit">Submit</div>-->
+		    
             
             <div data-role="footer" data-position="fixed" data-theme="a" data-id="order">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#Menu" data-icon="star">Menu</a></li>
-                        <li><a href="#Order History" data-icon="grid">Order History</a></li>
-                        <li><a href="#Settings" data-icon="gear">Settings</a></li>
+                        <li><a href="#howTo" data-icon="info" class="ul-btn-active">How To Play</a></li>
+                        <li><a href="#pricing" data-icon="star">Pricing</a></li>
+                        <li><a href="#account" data-icon="gear">Account</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
 	    
+
+
+
+
+
+
+
 	
 	
-	<!--Menu Page-->
-        <div data-role="page" id="Menu" data-add-back-btn="true">
+	<!--#How To Play Page-->
+        <div data-role="page" id="howTo" data-add-back-btn="true">
             <div data-role="header" data-position="fixed">
-                <h1>Menu</h1>
+                <h1 id="howToTitle">How To Play.</h1>
             </div>
             
             <div data-role="content">
-                <p>Menu.</p>
+                <p>Match 2 of 5 numbers win $500. </p>
+		<p>Match 3 of 5 numbers win $1,000.</p>
+		<p>Match 4 of 5 numbers win $5,000.</p>
             </div>
             
             <div data-role="footer" data-position="fixed" data-theme="a" data-id="order">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#Menu" data-icon="star" class="ui-btn-active">Menu</a></li>
-                        <li><a href="#Order History" data-icon="grid">Order History</a></li>
-                        <li><a href="#Settings" data-icon="gear">Settings</a></li>
+                        <li><a href="#howTo" data-icon="info" class="ui-btn-active">How To Play</a></li>
+                        <li><a href="#pricing" data-icon="star">Pricing</a></li>
+                        <li><a href="#account" data-icon="gear">Account</a></li>
                     </ul>
                 </div>
             </div>
@@ -150,22 +162,27 @@
 	
 	
 	
-        <!--Order History Page-->
-        <div data-role="page" id="Order History" data-add-back-btn="true">
+	
+	
+	
+	
+	
+        <!--#Pricing Page-->
+        <div data-role="page" id="pricing" data-add-back-btn="true">
             <div data-role="header" data-position="fixed">
-                <h1>Order History</h1>
+                <h1 id="pricingTitle">Pricing</h1>
             </div>
             
             <div data-role="content">
-                <p>List of orders.</p>
+                <p>Pricing.</p>
             </div>
             
             <div data-role="footer" data-position="fixed" data-theme="a" data-id="order">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#Menu" data-icon="star">Menu</a></li>
-                        <li><a href="#Order History" data-icon="grid" class="ui-btn-active">Order History</a></li>
-                        <li><a href="#Settings" data-icon="gear">Settings</a></li>
+                        <li><a href="#howTo" data-icon="info">How To Play</a></li>
+                        <li><a href="#pricing" data-icon="star" class="ui-btn-active">Pricing</a></li>
+                        <li><a href="#account" data-icon="gear">Account</a></li>
                     </ul>
                     
                 </div>
@@ -174,10 +191,16 @@
         
 	
 	
-        <!--#Settings Page-->
-        <div data-role="page" id="Settings" data-add-back-btn="true">
+	
+	
+	
+	
+	
+	
+        <!--#Account Page-->
+        <div data-role="page" id="account" data-add-back-btn="true">
             <div data-role="header" data-position="fixed">
-                <h1>Order</h1>
+                <h1 id="accountTitle">Account</h1>
             </div>
             
             <div data-role="content">
@@ -188,9 +211,9 @@
             <div data-role="footer" data-position="fixed" data-theme="a" data-id="order">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#Menu" data-icon="star">Menu</a></li>
-                        <li><a href="#Order History" data-icon="grid">Order History</a></li>
-                        <li><a href="#Settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
+                        <li><a href="#howTo" data-icon="info">How To Play</a></li>
+                        <li><a href="#pricing" data-icon="star">Pricing</a></li>
+                        <li><a href="#account" data-icon="gear" class="ui-btn-active">Account</a></li>
                     </ul>
                     
                 </div>
@@ -198,14 +221,21 @@
         </div>
 	
 	
+
+
+
+
+
+
+
 	
 	
-	<!--Toppings Page-->
+	<!--Lotto Numbers Page-->
         
-        <div data-role="page" id="toppings" data-add-back-btn="true">
+        <div data-role="page" id="lottoNum" data-add-back-btn="true">
             
             <div data-role="header" data-position="fixed">
-                <h1>Toppings.</h1>
+                <h1 id="numbersTitle">Numbers</h1>
             </div>
         
         <div data-role="content">
@@ -213,51 +243,76 @@
 	    <div data-role="collapsible-set">
 		
             <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                <h3>Cheese</h3>
+                <h3>Numbers 1 thru 15</h3>
                 <fieldset data-role="controlgroup">
-                    <input type="checkbox" id="mozzmini" class="custom" data-mini="true" /><label for ="mozzmini">Extra Mozzarella</label>
-                    <input type="checkbox" id="parmmini" class="custom" data-mini="true" /><label for ="parmmini">Extra Parmesan</label>
-                    <input type="checkbox" id="cheddarmini" class="custom" data-mini="true" /><label for ="cheddarmini">Extra Cheddar</label>
+                    <input type="checkbox" id="onemini" class="custom" data-mini="true" /><label for ="onemini">1</label>
+                    <input type="checkbox" id="twomini" class="custom" data-mini="true" /><label for ="twomini">2</label>
+                    <input type="checkbox" id="threemini" class="custom" data-mini="true" /><label for ="threemini">3</label>
+		    <input type="checkbox" id="fourmini" class="custom" data-mini="true" /><label for ="fourmini">4</label>
+		    <input type="checkbox" id="fivemini" class="custom" data-mini="true" /><label for ="fivemini">5</label>
+		    <input type="checkbox" id="sixmini" class="custom" data-mini="true" /><label for ="sixmini">6</label>
+		    <input type="checkbox" id="sevenmini" class="custom" data-mini="true" /><label for ="sevenmini">7</label>
+		    <input type="checkbox" id="eightmini" class="custom" data-mini="true" /><label for ="eightmini">8</label>
+		    <input type="checkbox" id="ninemini" class="custom" data-mini="true" /><label for ="ninemini">9</label>
+		    <input type="checkbox" id="tenmini" class="custom" data-mini="true" /><label for ="tenmini">10</label>
+		    <input type="checkbox" id="elevenmini" class="custom" data-mini="true" /><label for ="elevenmini">11</label>
+		    <input type="checkbox" id="twelvemini" class="custom" data-mini="true" /><label for ="twelvemini">12</label>
+		    <input type="checkbox" id="thirteenmini" class="custom" data-mini="true" /><label for ="thirteenmini">13</label>
+		    <input type="checkbox" id="fourteenmini" class="custom" data-mini="true" /><label for ="fourteenmini">14</label>
+		    <input type="checkbox" id="fifteenmini" class="custom" data-mini="true" /><label for ="fifteenmini">15</label>
 		</fieldset>
             </div>
             <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                <h3>Meat</h3>
+                <h3>Numbers 16 thru 30</h3>
 		<fieldset data-role="controlgroup">
-                    <input type="checkbox" id="pepperonimini" class="custom" data-mini="true" /><label for ="pepperonimini">Pepperoni</label>
-                    <input type="checkbox" id="sausagemini" class="custom" data-mini="true" /><label for ="sausagemini">Sausage</label>
-                    <input type="checkbox" id="baconmini" class="custom" data-mini="true" /><label for ="bacon-ini">Bacon</label>
-                    <input type="checkbox" id="hammini" class="custom" data-mini="true" /><label for ="hammini">Ham</label>
-                    <input type="checkbox" id="chickenmini" class="custom" data-mini="true" /><label for ="chickenmini">Chiken (Add $2.00)</label>
+                    <input type="checkbox" id="sixteenmini" class="custom" data-mini="true" /><label for ="sixteenmini">16</label>
+		    <input type="checkbox" id="seventeenmini" class="custom" data-mini="true" /><label for ="seventeenmini">17</label>
+		    <input type="checkbox" id="eighteenmini" class="custom" data-mini="true" /><label for ="eighteenmini">18</label>
+		    <input type="checkbox" id="nineteenmini" class="custom" data-mini="true" /><label for ="nineteenmini">19</label>
+		    <input type="checkbox" id="twentymini" class="custom" data-mini="true" /><label for ="twentymini">20</label>
+		    <input type="checkbox" id="twentyonemini" class="custom" data-mini="true" /><label for ="twentyonemini">21</label>
+		    <input type="checkbox" id="twentytwomini" class="custom" data-mini="true" /><label for ="twentytwomini">22</label>
+		    <input type="checkbox" id="twentythreemini" class="custom" data-mini="true" /><label for ="twentythreemini">23</label>
+		    <input type="checkbox" id="twentyfourmini" class="custom" data-mini="true" /><label for ="twentyfourmini">24</label>
+		    <input type="checkbox" id="twentyfivemini" class="custom" data-mini="true" /><label for ="twentyfivemini">25</label>
+		    <input type="checkbox" id="twentysixmini" class="custom" data-mini="true" /><label for ="twentysixmini">26</label>
+		    <input type="checkbox" id="twentysevenmini" class="custom" data-mini="true" /><label for ="twentysevenmini">27</label>
+		    <input type="checkbox" id="twentyeightmini" class="custom" data-mini="true" /><label for ="twentyeightmini">28</label>
+		    <input type="checkbox" id="twentyninemini" class="custom" data-mini="true" /><label for ="twentyninemini">29</label>
+		    <input type="checkbox" id="thirtymini" class="custom" data-mini="true" /><label for ="thirtymini">30</label>
 		</fieldset>
             </div>
             <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                <h3>Veggies</h3>
+                <h3>Numbers 31 thru 49</h3>
 		<fieldset data-role="controlgroup">
-		    <input type="checkbox" id="onionmini" class="custom" data-mini="true" /><label for ="onionmini">Onion</label>
-                    <input type="checkbox" id="grnpeppermini" class="custom" data-mini="true" /><label for ="grnpeppermini">Green Pepper</label>
-                    <input type="checkbox" id="bpeppermini" class="custom" data-mini="true" /><label for ="bpeppermini">Banana Pepper</label>
-                    <input type="checkbox" id="ppcnimini" class="custom" data-mini="true" /><label for ="ppcnimini">Peppercini</label>
-                    <input type="checkbox" id="spnchmini" class="custom" data-mini="true" /><label for ="spnchmini">Spinach</label>
-		    <input type="checkbox" id="tommini" class="custom" data-mini="true" /><label for ="tommini">Tomato</label>
-		    <input type="checkbox" id="mushmini" class="custom" data-mini="true" /><label for ="mushmini">Mushroom</label>
+		    <input type="checkbox" id="thirtyonemini" class="custom" data-mini="true" /><label for ="thirtyonemini">31</label>
+		    <input type="checkbox" id="thirtytwomini" class="custom" data-mini="true" /><label for ="thirtytwomini">32</label>
+		    <input type="checkbox" id="thirtythreemini" class="custom" data-mini="true" /><label for ="thirtythreemini">33</label>
+		    <input type="checkbox" id="thirtyfourmini" class="custom" data-mini="true" /><label for ="thirtyfourmini">34</label>
+		    <input type="checkbox" id="thirtyfivemini" class="custom" data-mini="true" /><label for ="thirtyfivemini">35</label>
+		    <input type="checkbox" id="thirtysixmini" class="custom" data-mini="true" /><label for ="thirtysixmini">36</label>
+		    <input type="checkbox" id="thirtysevenmini" class="custom" data-mini="true" /><label for ="thirtysevenmini">37</label>
+		    <input type="checkbox" id="thirtyeightmini" class="custom" data-mini="true" /><label for ="thirtyeightmini">38</label>
+		    <input type="checkbox" id="thirtyninemini" class="custom" data-mini="true" /><label for ="thirtyninemini">39</label>
+		    <input type="checkbox" id="fourtymini" class="custom" data-mini="true" /><label for ="fourtymini">40</label>
+		    <input type="checkbox" id="fourtyonemini" class="custom" data-mini="true" /><label for ="fourtyonemini">41</label>
+		    <input type="checkbox" id="fourtytwomini" class="custom" data-mini="true" /><label for ="fourtytwomini">42</label>
+		    <input type="checkbox" id="fourtythreemini" class="custom" data-mini="true" /><label for ="fourtythreemini">43</label>
+		    <input type="checkbox" id="fourtyfourmini" class="custom" data-mini="true" /><label for ="fourtyfourmini">44</label>
+		    <input type="checkbox" id="fourtyfivemini" class="custom" data-mini="true" /><label for ="fourtyfivemini">45</label>
+		    <input type="checkbox" id="fourtysixmini" class="custom" data-mini="true" /><label for ="fourtysixmini">46</label>
+		    <input type="checkbox" id="fourtysevenmini" class="custom" data-mini="true" /><label for ="fourtysevenmini">47</label>
+		    <input type="checkbox" id="fourtyeightmini" class="custom" data-mini="true" /><label for ="fourtyeightmini">48</label>
+		    <input type="checkbox" id="fourtyninemini" class="custom" data-mini="true" /><label for ="fourtyninemini">49</label>
 		    </fieldset>
             </div>
-            <div data-role="collapsible" data-collapsed="true" data-theme="a">
-                <h3>Sauce</h3>
-		<fieldset data-role="controlgroup">
-		    <input type="checkbox" id="bbqmini" class="custom" data-mini="true" /><label for ="bbqmini">Barbeque</label>
-                    <input type="checkbox" id="alfredomini" class="custom" data-mini="true" /><label for ="alfredomini">Alfredo</label>
-                    <input type="checkbox" id="buffalomini" class="custom" data-mini="true" /><label for ="buffalomini">Buffalo</label>
-                    <input type="checkbox" id="ranchmini" class="custom" data-mini="true" /><label for ="ranchmini">Ranch</label>
-                    <input type="checkbox" id="blchmini" class="custom" data-mini="true" /><label for ="blchmini">Blue Cheese</label>
-		</fieldset>
-            </div>
+
 	    
 	    <div data-role="fieldcontain">
 	    <div>
-		<fieldset class="ui-grid-a">
-		    <!--<div class="ui-block-a">--><a href="#home" data-role="button" data-inline="true" data-icon="delete" data-transition="slide">Cancel</a></div>
-		    <!--<div class="ui-block-b">--><a href="#info" data-role="button" data-theme="b" data-inline="true" data-icon="arrow-r" data-transition="slide">Next</a></div>
+		<fieldset class="ui-grid">
+		    <!--<div class="ui-block-b">--><a href="#info" data-role="button" data-theme="b" data-inline="true" data-icon="arrow-r" data-transition="slide">Next</a>
+		    <!--<div class="ui-block-a">--><a href="#order" data-mini="true" data-role="button" data-inline="true" data-icon="delete" data-transition="slide">Cancel</a>
 		    <!--<div class="ui-block-a"><button type="submit" data-theme="c" data-icon="delete">Cancel</button></div>
 		    <div class="ui-block-b"><button type="submit" data-theme="b" data-icon="arrow-r" data-iconpos="right">Next</button></div>-->
 		</fieldset>
@@ -265,9 +320,9 @@
 	    <div data-role="footer" data-position="fixed" data-theme="a" data-id="order">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#Menu" data-icon="star">Menu</a></li>
-                        <li><a href="#Order History" data-icon="grid">Order History</a></li>
-                        <li><a href="#Settings" data-icon="gear">Settings</a></li>
+                        <li><a href="#howTo" data-icon="info">How To Play</a></li>
+                        <li><a href="#pricing" data-icon="star">Pricing</a></li>
+                        <li><a href="#account" data-icon="gear">Account</a></li>
                     </ul>
                     
                 </div>

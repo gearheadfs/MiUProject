@@ -30,19 +30,52 @@ h1{
     margin-left: 400px;
 }
 
+#playMethod{
+    color: orange;
+}
+
+#numbersTitle{
+    color: orange;
+}
+
+#yourInfoTitle{
+    color: orange;
+}
+
+#howTo{
+    color: orange;
+}
+
+#howToTitle{
+    color: orange;
+}
+
+#pricing{
+    color: orange;
+}
+
+#pricingTitle{
+    color: orange;
+}
+
+#account{
+    color: orange;
+}
+
+#accountTitle{
+    color: orange;
+}
+
 #meltyPizza{
     margin: 30px 30px 30px 30px;
 }
 
 h2{
     color: black;
-    position:relative;
-    margin: 0px 450px;
-    padding: 0px;
     font-style:italic;
 }
 
-#addcontact{
+#pickNum{
     margin-left: 550px;
     font-size: x-large;
     font-style:italic;
