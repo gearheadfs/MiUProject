@@ -1,0 +1,187 @@
+/* Dave Johnson
+   MiU 1209
+   Assignment 1
+   09/28/12 */
+
+body{font-family:Verdana, Geneva, 'DejaVu Sans', sans-serif; margin-top: 10px;margin-right: 0px; margin-bottom: 0px; margin-left: 200px; padding: 0px; background-image: url("bam.jpg"); background-repeat: no-repeat;background-position:center-stretch; background-color:#186EAB;
+}
+
+#runSearch{
+    float: right;
+}
+
+#searchText{
+    display: inline;
+    margin: auto;
+    
+}
+
+h1{
+    color: black;
+    margin: 2px 60px 30px 500px;
+    padding: 1px;
+    font-style:italic;
+}
+
+#description{
+    color: black;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 400px;
+}
+
+#playMethod{
+    color: orange;
+}
+
+#numbersTitle{
+    color: orange;
+}
+
+#yourInfoTitle{
+    color: orange;
+}
+
+#howTo{
+    color: orange;
+}
+
+#howToTitle{
+    color: orange;
+}
+
+#pricing{
+    color: orange;
+}
+
+#pricingTitle{
+    color: orange;
+}
+
+#account{
+    color: orange;
+}
+
+#accountTitle{
+    color: orange;
+}
+
+#meltyPizza{
+    margin: 30px 30px 30px 30px;
+}
+
+h2{
+    color: black;
+    font-style:italic;
+}
+
+#pickNum{
+    margin-left: 550px;
+    font-size: x-large;
+    font-style:italic;
+}
+
+h2{
+    margin-left: 500px;
+}
+
+h3{
+    margin-left: 0px;
+}
+
+#dropdown1{
+    margin-left: 450px;
+}
+
+#dropdown2{
+    margin-left: 450px;
+}
+
+h4{
+    font-style:italic;
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+#clear{
+    margin: 1px 28px;
+}
+
+#displayLink{
+    margin: 1px -10px;
+}
+
+#required{
+    font-size:small;
+}
+
+#orderForm{
+    margin-left: 25px;
+}
+
+#contactInfo{
+    font-size:larger;
+    color:#000000;
+}
+
+#city{
+    display:block;
+}
+
+#select{
+    display:inline;
+}
+
+p{
+    letter-spacing: -0.8px;
+    font-size:small;
+    text-align:justify;
+    text-align:center;
+    font-style:oblique;
+}
+
+a:hover{color:blue;}
+
+
+label{
+    display:inline;
+}
+
+label:hover{color:blue;}
+
+li{
+    font-size: larger;
+}
+
+li:hover{color:blue;}
+
+span{
+    font-size: large;
+    text-transform:uppercase;
+    text-decoration: underline;
+    font-style:italic;
+}
+
+textarea{
+    
+}
+
+ul{
+    list-style:inside none;
+    font-size:small;
+}
+input{
+    
+}
+input:hover{color:blue;}
+
+#submit{
+    margin: 1px 130px;
+}
+
+#submit:hover{color:blue;}
+
+#main{
+    margin: 1px 155px;
+}
