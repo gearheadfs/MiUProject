@@ -66,23 +66,16 @@ h1{
     color: orange;
 }
 
-#meltyPizza{
-    margin: 30px 30px 30px 30px;
-}
-
 h2{
     color: black;
     font-style:italic;
+    margin-left: 500px;
 }
 
 #pickNum{
     margin-left: 550px;
     font-size: x-large;
     font-style:italic;
-}
-
-h2{
-    margin-left: 500px;
 }
 
 h3{
@@ -141,20 +134,20 @@ p{
     font-style:oblique;
 }
 
-a:hover{color:blue;}
+a:hover{color:white;}
 
 
 label{
     display:inline;
 }
 
-label:hover{color:blue;}
+label:hover{color:orange;}
 
 li{
     font-size: larger;
 }
 
-li:hover{color:blue;}
+li:hover{color:orange;}
 
 span{
     font-size: large;
@@ -174,13 +167,13 @@ ul{
 input{
     
 }
-input:hover{color:blue;}
+input:hover{color:orange;}
 
 #submit{
     margin: 1px 130px;
 }
 
-#submit:hover{color:blue;}
+#submit:hover{color:white;}
 
 #main{
     margin: 1px 155px;
