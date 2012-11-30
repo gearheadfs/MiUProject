@@ -37,110 +37,301 @@ window.addEventListener("DOMContentLoaded", function(){
         } 
     }
     
-    //Find value of selected radio button
-    function getSelectedRadioCrust(){
-        var radiosCrust = document.forms[0].crust;
-        for(var i=0; i<radiosCrust.length; i++){
-            if(radiosCrust[i].checked){
-            crustValue = radiosCrust[i].value;
-        }
-    }
-}
-
-    function getSelectedRadioMethod(){
-        var radiosMethod = document.forms[0].method;
-        for(var i=0; i<radiosMethod.length; i++){
-            if(radiosMethod[i].checked){
-            methodValue = radiosMethod[i].value;
-        }
-    }
-}
-
     function getCheckboxValue(){
-        if($('xtracheese').checked){
-            xtracheeseValue = $('xtracheese').value;
+        if($('onemini').checked){
+            oneValue = $('onemini').value;
             
         }else{
-            xtracheeseValue = "None"
+            oneValue = "None"
         }
-        if($('pepperoni').checked){
-            pepperoniValue = $('pepperoni').value;
+        if($('twomini').checked){
+            twoValue = $('twomini').value;
             
         }else{
-            pepperoniValue = "None"
+            twoValue = "None"
         }
-        if($('sausage').checked){
-            sausageValue = $('sausage').value;
+        if($('threemini').checked){
+            threeValue = $('threemini').value;
             
         }else{
-            sausageValue = "None"
+            threeValue = "None"
         }
-        if($('bacon').checked){
-            baconValue = $('bacon').value;
+        if($('fourmini').checked){
+            fourValue = $('fourmini').value;
             
         }else{
-            baconValue = "None"
+            fourValue = "None"
         }
-        if($('onion').checked){
-            onionValue = $('onion').value;
+        if($('fivemini').checked){
+            fiveValue = $('fivemini').value;
             
         }else{
-            onionValue = "None"
+            fiveValue = "None"
         }
-        if($('grnpepper').checked){
-            grnpepperValue = $('grnpepper').value;
+        if($('sixmini').checked){
+            sixValue = $('sixmini').value;
             
         }else{
-            grnpepperValue = "None"
+            sixValue = "None"
         }
-        if($('mush').checked){
-            mushValue = $('mush').value;
+        if($('sevenmini').checked){
+            sevenValue = $('sevenmini').value;
             
         }else{
-            mushValue = "None"
+            sevenValue = "None"
         }
-        if($('bbq').checked){
-            bbqValue = $('bbq').value;
+        if($('eightmini').checked){
+            eightValue = $('eightmini').value;
             
         }else{
-            bbqValue = "None"
+            eightValue = "None"
         }
-        if($('spnch').checked){
-            spnchValue = $('spnch').value;
+        if($('ninemini').checked){
+            nineValue = $('ninimini').value;
             
         }else{
-            spnchValue = "None"
+            nineValue = "None"
         }
-        if($('alfredo').checked){
-            alfredoValue = $('alfredo').value;
+        if($('tenmini').checked){
+            tenValue = $('tenmini').value;
             
         }else{
-            alfredoValue = "None"
+            tenValue = "None"
         }
-        if($('chkn').checked){
-            chknValue = $('chkn').value;
+        if($('elevenmini').checked){
+            elevenValue = $('elevenmini').value;
             
         }else{
-            chknValue = "None"
+            elevenValue = "None"
         }
-        if($('bsauce').checked){
-            bsauceValue = $('bsauce').value;
+        if($('twelvemini').checked){
+            twelveValue = $('twelvemini').value;
             
         }else{
-            bsauceValue = "None"
+            twelveValue = "None"
         }
-        if($('rnch').checked){
-            rnchValue = $('rnch').value;
+        if($('thirteenmini').checked){
+            thirteenValue = $('thirteenmini').value;
             
         }else{
-            rnchValue = "None"
+            thirteenValue = "None"
         }
-        if($('blch').checked){
-            blchValue = $('blch').value;
+        if($('fourteenmini').checked){
+            fourteenValue = $('fourteenmini').value;
             
         }else{
-            blchValue = "None"
-        }      
+            fourteenValue = "None"
+        }
+        if($('fifteenmini').checked){
+            fifteenValue = $('fifteenmini').value;
+            
+        }else{
+            fifteenValue = "None"
+        }
+        if($('sixteenmini').checked){
+            sixteenValue = $('sixteenmini').value;
+            
+        }else{
+            sixteenValue = "None"
+        }
+        if($('seventeenmini').checked){
+            seventeenValue = $('seventeenmini').value;
+            
+        }else{
+            seventeenValue = "None"
+        }
+        if($('eighteenmini').checked){
+            eighteenValue = $('eighteenmini').value;
+            
+        }else{
+            eighteenValue = "None"
+        }
+        if($('nineteenmini').checked){
+            nineteenValue = $('nineteenmini').value;
+            
+        }else{
+            nineteenValue = "None"
+        }
+        if($('twentymini').checked){
+            twentyValue = $('twentymini').value;
+            
+        }else{
+            twentyValue = "None"
+        }
+        if($('twentyonemini').checked){
+            twentyoneValue = $('twentyonemini').value;
+            
+        }else{
+            twentyoneValue = "None"
+        }
+        if($('twentytwomini').checked){
+            twentytwoValue = $('twentytwomini').value;
+            
+        }else{
+            twentytwoValue = "None"
+        }
+        if($('twentythreemini').checked){
+            twentythreeValue = $('twentythreemini').value;
+            
+        }else{
+            twentythreeValue = "None"
+        }
+        if($('twentyfourmini').checked){
+            twentyfourValue = $('twentyfourmini').value;
+            
+        }else{
+            twentyfourValue = "None"
+        }
+        if($('twentyfivemini').checked){
+            twentyfiveValue = $('twentyfivemini').value;
+            
+        }else{
+            twentyfiveValue = "None"
+        }
+        if($('twentysixmini').checked){
+            twentysixValue = $('twentysixmini').value;
+            
+        }else{
+            twentysixValue = "None"
+        }
+        if($('twentysevenmini').checked){
+            twentysevenValue = $('twentysevenmini').value;
+            
+        }else{
+            twentysevenValue = "None"
+        }
+        if($('twentyeightmini').checked){
+            twentyeightValue = $('twentyeightmini').value;
+            
+        }else{
+            twentyeightValue = "None"
+        }
+        if($('twentyninemini').checked){
+            twentynineValue = $('twentyninemini').value;
+            
+        }else{
+            twentynineValue = "None"
+        }
+        if($('thirtymini').checked){
+            thirtyValue = $('thirtymini').value;
+            
+        }else{
+            thirtyValue = "None"
+        }
+        if($('thirtyonemini').checked){
+            thirtyoneValue = $('thirtyonemini').value;
+            
+        }else{
+            thirtyoneValue = "None"
+        }
+        if($('thirtytwomini').checked){
+            thirtytwoValue = $('thirtytwomini').value;
+            
+        }else{
+            thirtytwoValue = "None"
+        }
+        if($('thirtythreemini').checked){
+            thirtythreeValue = $('thirtythreemini').value;
+            
+        }else{
+            thirtythreeValue = "None"
+        }
+        if($('thirtyfourmini').checked){
+            thirtyfourValue = $('thirtyfourmini').value;
+            
+        }else{
+            thirtyfourValue = "None"
+        }
+        if($('thirtyfivemini').checked){
+            thirtyfiveValue = $('thirtyfivemini').value;
+            
+        }else{
+            thirtyfiveValue = "None"
+        }
+        if($('thirtysixmini').checked){
+            thirtysixValue = $('thirtysixmini').value;
+            
+        }else{
+            thirtysixValue = "None"
+        }
+        if($('thirtysevenmini').checked){
+            thirtysevenValue = $('thirtysevenmini').value;
+            
+        }else{
+            thirtysevenValue = "None"
+        }
+        if($('thirtyeightmini').checked){
+            thirtyeightValue = $('thirtyeightmini').value;
+            
+        }else{
+            thirtyeightValue = "None"
+        }
+        if($('thirtyninemini').checked){
+            thirtynineValue = $('thirtyninemini').value;
+            
+        }else{
+            thirtynineValue = "None"
+        }
+        if($('fourtymini').checked){
+            fourtyValue = $('fourtymini').value;
+            
+        }else{
+            fourtyValue = "None"
+        }
+        if($('fourtyonemini').checked){
+            fourtyoneValue = $('fourtyonemini').value;
+            
+        }else{
+            fourtyoneValue = "None"
+        }
+        if($('fourtytwomini').checked){
+            fourtytwoValue = $('fourtytwomini').value;
+            
+        }else{
+            fourtytwoValue = "None"
+        }
+        if($('fourtythreemini').checked){
+            fourtythreeValue = $('fourtythreemini').value;
+            
+        }else{
+            foutythreeValue = "None"
+        }
+        if($('fourtyfourmini').checked){
+            fourtyfourValue = $('fourtyfourmini').value;
+            
+        }else{
+            fourtyfourValue = "None"
+        }
+        if($('fourtyfivemini').checked){
+            fourtyfiveValue = $('fourtyfivemini').value;
+            
+        }else{
+            fourtyfiveValue = "None"
+        }
+        if($('fourtysixmini').checked){
+            fourtysixValue = $('fourtysixmini').value;
+            
+        }else{
+            fourtysixValue = "None"
+        }
+        if($('fourtysevenmini').checked){
+            fourtysevenValue = $('fourtysevenmini').value;
+            
+        }else{
+            fourtysevenValue = "None"
+        }
+        if($('fourtyeightmini').checked){
+            fourtyeightValue = $('fourtyeightmini').value;
+            
+        }else{
+            fourtyeightValue= "None"
+        }
+        if($('fourtyninemini').checked){
+            fourtynineValue = $('fourtyninemini').value;
+            
+        }else{
+            fourtynineValue = "None"
+        }  
     }
     
     function toggleControls(n){
@@ -173,8 +364,7 @@ window.addEventListener("DOMContentLoaded", function(){
         }
         // Gather up all form field values and store in an object
         //Object properties contain array with the form label and input value
-        getSelectedRadioCrust();
-        getSelectedRadioMethod();
+        //getSelectedRadioMethod();
         getCheckboxValue();
         var item            = {};
             item.firstname  = ["First Name:", $('firstname').value];
@@ -183,23 +373,56 @@ window.addEventListener("DOMContentLoaded", function(){
             item.city       = ["City:", $('city').value];
             item.state      = ["State:", selectText];
             item.phnumber   = ["Phone Number:", $('phnumber').value];
-            item.crust      = ["Crust:", crustValue];
-            item.xtracheese = ["Extra Cheese:", xtracheeseValue];
-            item.pepperoni  = ["Pepperoni:", pepperoniValue];
-            item.sausage    = ["Sausage:", sausageValue];
-            item.bacon      = ["Bacon:", baconValue];
-            item.onion      = ["Onion:", onionValue];
-            item.grnpepper  = ["Green Pepper:", grnpepperValue];
-            item.mush       = ["Mushrooms:", mushValue];
-            item.bbq        = ["Barbeque:", bbqValue];
-            item.spnch      = ["Spinach:", spnchValue];
-            item.alfredo    = ["Alfredo:", alfredoValue];
-            item.chkn       = ["Chicken:", chknValue];
-            item.bsauce     = ["Buffalo Sauce:", bsauceValue];
-            item.rnch       = ["Ranch:", rnchValue];
-            item.blch       = ["Blue Cheese:", blchValue];
+            item.onemini    = ["One:", oneValue];
+            item.twomini    = ["Two:", twoValue];
+            item.threemini  = ["Three:", threeValue];
+            item.fourmini   = ["Four:", fourValue];
+            item.fivemini   = ["Five:", fiveValue];
+            item.sixmini    = ["Six:", sixValue];
+            item.sevenmini  = ["Seven:", sevenValue];
+            item.eightmini  = ["Eight:", eightValue];
+            item.ninemini   = ["Nine:", nineValue];
+            item.tenmini    = ["Ten:", tenValue];
+            item.elevenmini = ["Eleven:", elevenValue];
+            item.twelvemini = ["Twelve:", twelveValue];
+            item.thirteenmini = ["Thirteen:", thirteenValue];
+            item.fourteenmini = ["Fourteen:", fourteenValue];
+            item.fifteenmini = ["Fourteen:", fifteenValue];
+            item.sixteenmini = ["Fourteen:", sixteenValue];
+            item.seventeenmini = ["Fourteen:", seventeenValue];
+            item.eighteenmini = ["Fourteen:", eighteenValue];
+            item.nineteenmini = ["Fourteen:", nineteenValue];
+            item.twentymini = ["Fourteen:", twentyValue];
+            item.twentyonemini = ["Fourteen:", twentyoneValue];
+            item.twentytwomini = ["Fourteen:", twentytwoValue];
+            item.twentythreemini = ["Fourteen:", twentythreeValue];
+            item.twentyfourmini = ["Fourteen:", twentyfourValue];
+            item.twentyfivemini = ["Fourteen:", twentyfiveValue];
+            item.twentysixmini = ["Fourteen:", twentysixValue];
+            item.twentysevenmini = ["Fourteen:", twentysevenValue];
+            item.twentyeightmini = ["Fourteen:", twentyeightValue];
+            item.twentyninemini = ["Fourteen:", twentynineValue];
+            item.thirtymini = ["Fourteen:", thirtyValue];
+            item.thirtyonemini = ["Fourteen:", thirtyoneValue];
+            item.thirtytwomini = ["Fourteen:", thirtytwoValue];
+            item.thirtythreemini = ["Fourteen:", thirtythreeValue];
+            item.thirtyfourmini = ["Fourteen:", thirtyfourValue];
+            item.thirtyfivemini = ["Fourteen:", thirtyfiveValue];
+            item.thirtysixmini = ["Fourteen:", thirtysixValue];
+            item.thirtysevenmini = ["Fourteen:", thirtysevenValue];
+            item.thirtyeightmini = ["Fourteen:", thirtyeightValue];
+            item.thirtyninemini = ["Fourteen:", thirtynineValue];
+            item.fourtymini = ["Fourteen:", fourtyValue];
+            item.fourtyonemini = ["Fourteen:", fourtyoneValue];
+            item.fourtytwomini = ["Fourteen:", fourtytwoValue];
+            item.fourtythreemini = ["Fourteen:", fourtythreeValue];
+            item.fourtyfourmini = ["Fourteen:", fourtyfourValue];
+            item.fourtyfivemini = ["Fourteen:", fourtyfiveValue];
+            item.fourtysixmini = ["Fourteen:", fourtysixValue];
+            item.fourtysevenmini = ["Fourteen:", fourtysevenValue];
+            item.fourtyeightmini = ["Fourteen:", fourtyeightValue];
+            item.fourtyninemini = ["Fourteen:", fourtynineValue];           
             item.quantity   = ["Quantity:", $('qty').value];
-            item.method    = ["Pick Up Or Deliver:", methodValue];
             item.date       = ["Date:", $('date').value];
             item.instruct   = ["Special Instructions:", $('specialInstructions').value];
         //Save data into local storage: Use stringify to convert object to a string
@@ -286,7 +509,7 @@ window.addEventListener("DOMContentLoaded", function(){
     }
     
     function editItem(){
-        var ask = confirm("Edit this order?");
+        var ask = confirm("Edit your numbers?");
         //Grab data from item from local storage
         var value = localStorage.getItem(this.key);
         var item = JSON.parse(value);
@@ -301,73 +524,164 @@ window.addEventListener("DOMContentLoaded", function(){
         $('city').value = item.city[1];
         $('select').value = item.state[1];
         $('phnumber').value = item.phnumber[1];
-        var radiosCrust = document.forms[0].crust;
-        for(var i=0; i<radiosCrust.length; i++){
-            if (radiosCrust[i].value == "Deep Dish" && item.crust[1] == "Deep Dish"){
-                radiosCrust[i].setAttribute("checked", "checked");
-            }else if(radiosCrust[i].value == "Thin Crust" && item.crust[1] == "Thin Crust"){
-                radiosCrust[i].setAttribute("checked", "checked");
+        
+            if(item.onemini[1] == "Yes"){
+                $('onemini').setAttribute("checked", "checked");
             }
-            if (radiosCrust[i].value == "Stuffed Crust" && item.crust[1] == "Stuffed Crust"){
-                radiosCrust[i].setAttribute("checked", "checked");
-            }else if(radiosCrust[i].value == "No Crust" && item.crust[1] == "No Crust"){
-                radiosCrust[i].setAttribute("checked", "checked");
+            if(item.twomini[1] == "Yes"){
+                $('twomini').setAttribute("checked", "checked");
             }
-        }
-    
-            if(item.xtracheese[1] == "Yes"){
-                $('xtracheese').setAttribute("checked", "checked");
+            if(item.threemini[1] == "Yes"){
+                $('threemini').setAttribute("checked", "checked");
             }
-            if(item.pepperoni[1] == "Yes"){
-                $('pepperoni').setAttribute("checked", "checked");
+            if(item.fourmini[1] == "Yes"){
+                $('fourmini').setAttribute("checked", "checked");
             }
-            if(item.sausage[1] == "Yes"){
-                $('sausage').setAttribute("checked", "checked");
+            if(item.fivemini[1] == "Yes"){
+                $('fivemini').setAttribute("checked", "checked");
             }
-            if(item.bacon[1] == "Yes"){
-                $('bacon').setAttribute("checked", "checked");
+            if(item.sixmini[1] == "Yes"){
+                $('sixmini').setAttribute("checked", "checked");
             }
-            if(item.onion[1] == "Yes"){
-                $('onion').setAttribute("checked", "checked");
+            if(item.sevenmini[1] == "Yes"){
+                $('sevenmini').setAttribute("checked", "checked");
             }
-            if(item.grnpepper[1] == "Yes"){
-                $('grnpepper').setAttribute("checked", "checked");
+            if(item.eightmini[1] == "Yes"){
+                $('eightmini').setAttribute("checked", "checked");
             }
-            if(item.mush[1] == "Yes"){
-                $('mush').setAttribute("checked", "checked");
+            if(item.ninemini[1] == "Yes"){
+                $('ninemini').setAttribute("checked", "checked");
             }
-            if(item.bbq[1] == "Yes"){
-                $('bbq').setAttribute("checked", "checked");
+            if(item.tenmini[1] == "Yes"){
+                $('tenmini').setAttribute("checked", "checked");
             }
-            if(item.spnch[1] == "Yes"){
-                $('spnch').setAttribute("checked", "checked");
+            if(item.elevenmini[1] == "Yes"){
+                $('elevenmini').setAttribute("checked", "checked");
             }
-            if(item.alfredo[1] == "Yes"){
-                $('alfredo').setAttribute("checked", "checked");
+            if(item.twelvemini[1] == "Yes"){
+                $('twelvemini').setAttribute("checked", "checked");
             }
-            if(item.chkn[1] == "Yes"){
-                $('chkn').setAttribute("checked", "checked");
+            if(item.thirteenmini[1] == "Yes"){
+                $('thirteenmini').setAttribute("checked", "checked");
             }
-            if(item.bsauce[1] == "Yes"){
-                $('bsauce').setAttribute("checked", "checked");
+            if(item.fourteenmini[1] == "Yes"){
+                $('fourteenmini').setAttribute("checked", "checked");
             }
-            if(item.rnch[1] == "Yes"){
-                $('rnch').setAttribute("checked", "checked");
+            if(item.fifteenmini[1] == "Yes"){
+                $('fifteenmini').setAttribute("checked", "checked");
             }
-            if(item.blch[1] == "Yes"){
-                $('blch').setAttribute("checked", "checked");
+            if(item.sixteenmini[1] == "Yes"){
+                $('sixteenmini').setAttribute("checked", "checked");
+            }
+            if(item.seventeenmini[1] == "Yes"){
+                $('seventeenmini').setAttribute("checked", "checked");
+            }
+            if(item.eighteenmini[1] == "Yes"){
+                $('eighteenmini').setAttribute("checked", "checked");
+            }
+            if(item.nineteenmini[1] == "Yes"){
+                $('nineteenmini').setAttribute("checked", "checked");
+            }
+            if(item.twentymini[1] == "Yes"){
+                $('twentymini').setAttribute("checked", "checked");
+            }
+            if(item.twentyonemini[1] == "Yes"){
+                $('twentyonemini').setAttribute("checked", "checked");
+            }
+            if(item.twentytwomini[1] == "Yes"){
+                $('twentytwomini').setAttribute("checked", "checked");
+            }
+            if(item.twentythreemini[1] == "Yes"){
+                $('twentythreemini').setAttribute("checked", "checked");
+            }
+            if(item.twentyfourmini[1] == "Yes"){
+                $('twentyfourmini').setAttribute("checked", "checked");
+            }
+            if(item.twentyfivemini[1] == "Yes"){
+                $('twentyfivemini').setAttribute("checked", "checked");
+            }
+            if(item.twentysixmini[1] == "Yes"){
+                $('twentysixmini').setAttribute("checked", "checked");
+            }
+            if(item.twentysevenmini[1] == "Yes"){
+                $('twentysevenmini').setAttribute("checked", "checked");
+            }
+            if(item.twentyeightmini[1] == "Yes"){
+                $('twentyeightmini').setAttribute("checked", "checked");
+            }
+            if(item.twentyninemini[1] == "Yes"){
+                $('twentyninemini').setAttribute("checked", "checked");
+            }
+            if(item.thirtymini[1] == "Yes"){
+                $('thirtymini').setAttribute("checked", "checked");
+            }
+            if(item.thirtyonemini[1] == "Yes"){
+                $('thirtyonemini').setAttribute("checked", "checked");
+            }
+            if(item.thirtytwomini[1] == "Yes"){
+                $('thirtythreemini').setAttribute("checked", "checked");
+            }
+            if(item.thirtyfourmini[1] == "Yes"){
+                $('thirtyfourmini').setAttribute("checked", "checked");
+            }
+            if(item.thirtyfivemini[1] == "Yes"){
+                $('thirtyfivemini').setAttribute("checked", "checked");
+            }
+            if(item.thirtysixmini[1] == "Yes"){
+                $('thirtysixmini').setAttribute("checked", "checked");
+            }
+            if(item.thirtysevenmini[1] == "Yes"){
+                $('thirtysevenmini').setAttribute("checked", "checked");
+            }
+            if(item.thirtyeightmini[1] == "Yes"){
+                $('thirtyeightmini').setAttribute("checked", "checked");
+            }
+            if(item.thirtyninemini[1] == "Yes"){
+                $('thirtyninemini').setAttribute("checked", "checked");
+            }
+            if(item.fourtymini[1] == "Yes"){
+                $('fourtymini').setAttribute("checked", "checked");
+            }
+            if(item.fourtyonemini[1] == "Yes"){
+                $('fourtyonemini').setAttribute("checked", "checked");
+            }
+            if(item.fourtytwomini[1] == "Yes"){
+                $('fourtytwomini').setAttribute("checked", "checked");
+            }
+            if(item.fourtythreemini[1] == "Yes"){
+                $('fourtythreemini').setAttribute("checked", "checked");
+            }
+            if(item.fourtyfourmini[1] == "Yes"){
+                $('fourtyfourmini').setAttribute("checked", "checked");
+            }
+            if(item.fourtyfivemini[1] == "Yes"){
+                $('fourtyfivemini').setAttribute("checked", "checked");
+            }
+            if(item.fourtysixmini[1] == "Yes"){
+                $('fourtysixmini').setAttribute("checked", "checked");
+            }
+            if(item.fourtysevenmini[1] == "Yes"){
+                $('fourtysevenmini').setAttribute("checked", "checked");
+            }
+            if(item.fourtyeightmini[1] == "Yes"){
+                $('fourtyeightmini').setAttribute("checked", "checked");
+            }
+            if(item.fourtyninemini[1] == "Yes"){
+                $('fourtyninemini').setAttribute("checked", "checked");
             }
     
         $('qty').value = item.quantity[1];
-        var radiosMethod = document.forms[0].method;
+        
+        
+        /*var radiosMethod = document.forms[0].method;
         for(var i=0; i<radiosMethod.length; i++){
-            if (radiosMethod[i].value == "Pick Up" && item.method[1] == "Pick Up"){
+            if (radiosMethod[i].value == "Pick Up" && item.method[1] == ""){
                 radiosMethod[i].setAttribute("checked", "checked");
-            }else if(radiosMethod[i].value == "Delivery" && item.method[1] == "Delivery"){
-                radiosMethod[i].setAttribute("checked", "checked");
+            }else if(radiosMethod[i].value == "Delivery" && item.method[1] == ""){
+                radiosMethod[i].setAttribute("checked", "checked"); 
             
             }
-        }
+        }*/
         $('date').value = item.date[1];
         $('specialInstructions').value = item.instruct[1];
         
@@ -376,7 +690,7 @@ window.addEventListener("DOMContentLoaded", function(){
         //Change Submit button value to say Edit
         $('submit').value = "Edit Contact";
         var editSubmit = $('submit');
-        //Save the key value established in this function as a propery of the editSubmit event
+        //Save the key value established in this function as a property of the editSubmit event
         //so the value can be used when data is saved that was edited
         editSubmit.addEventListener("click", validate);
         editSubmit.key = this.key;
@@ -484,10 +798,8 @@ window.addEventListener("DOMContentLoaded", function(){
                     ],
         getSelectedState,
         selectText,
-        crustValue,
-        methodValue
         errMsg = $('errors');
-    
+
     makeState();
         
         
@@ -500,10 +812,10 @@ window.addEventListener("DOMContentLoaded", function(){
     displayLink.addEventListener("click", getData);
     var clearLink = $('clear');
     clearLink.addEventListener("click", clearLocal);
-    var save = $('submit');
+    var save = $("submit");
     save.addEventListener("click", validate);
     
-    
+
 
     
     
